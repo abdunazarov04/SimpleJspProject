@@ -40,6 +40,6 @@ public class ToDoServlet extends HttpServlet {
 
         toDoRepository.save(new ToDo(message, isDone, users));
 
-        req.getRequestDispatcher("/views/show-todos.jsp").forward(req, resp);
+        req.getRequestDispatcher("/views/todo.jsp").forward(req, resp);
     }
 }
